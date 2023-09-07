@@ -1,0 +1,108 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+    background-color: #111;
+}
+header{
+    padding: 2em;
+    color: #149ddd;
+    display: grid;
+    justify-content: center;
+}
+h1{
+    text-shadow: 0 0 50px #149ddd;
+    font-size: 4rem;
+    /* font-family: 'Kanit', sans-serif; */
+    font-family: 'Rubik Iso', cursive;
+}
+section{
+    padding: 1rem;
+    height: fit-content;
+}
+.btn{
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0.5em;
+    color: #fff;
+    border-radius: 5px;
+    background-color: #149ddd;
+}
+.btn:hover{
+    color: #fff;
+}
+.frame{
+    margin-top: 1rem;
+    width: 100%;
+    height: fit-content;
+    padding: 1rem;
+    border-radius: 5px;
+    background-color: #149ddd15;
+}
+@keyframes slideUp {
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-10px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+.slideUp{
+    color: #fff;
+    animation: slideUp 2s ease 0s infinite;
+    animation: name duration timing-function delay iteration-count direction fill-mode;
+}
+@keyframes blink {
+    0%{
+        opacity: 0;
+    }
+    5%{
+        opacity: 0.5;
+    }
+    10%{
+        opacity: 1;
+    }
+    15%{
+        opacity: 0;
+    }
+    20%{
+        opacity: 0.1;
+    }
+    25%{
+        opacity: 0.5;
+    }
+    50%{
+        opacity: 0;
+    }
+    75%{
+        opacity: 1
+    }
+    100%{
+        opacity: 1;
+    } 
+}
+.blink{
+    animation: blink 2s ease infinite;
+}
+.sub-title{
+    color: #111;
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: #149ddd;
+    font-size: 2rem;
+    font-family: 'Kanit', sans-serif;
+}
+.text{
+    color:grey;
+}
+.imp-text{
+    font-weight: bold;
+}
+.frame:hover{
+   .sub-title{
+    color:#149ddd;
+   }  
+    text-shadow: 0 0 20px #149ddd;
+}
